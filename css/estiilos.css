@@ -1,0 +1,359 @@
+/* estilos.css */
+
+body {
+    font-family: 'Roboto', sans-serif; /* Tipografía moderna */
+    background-color: #121212; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    margin: 0;
+    padding: 20px; /* Espacio alrededor del contenido */
+}
+nav {
+    background-color: #1a1a1a;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para el nav */
+}
+
+header {
+    display: flex; /* Usar flexbox para alinear el contenido */
+    justify-content: space-between; /* Espacio entre el título y el logo */
+    align-items: center; /* Centrar verticalmente */
+    padding: 20px; /* Espaciado interno */
+    background-color: #1a1a1a; /* Fondo del encabezado */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para el encabezado */
+}
+
+h1 {
+    font-size: 2.5em; /* Tamaño del encabezado */
+    margin: 0; /* Sin margen */
+    text-shadow: 0 0 10px rgba(30, 136, 229, 1); /* Efecto de neón */
+}
+
+.logo {
+    max-width: 80px; /* Ancho máximo del logo */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+nav {
+    margin: 20px 0; /* Espacio superior e inferior para la navegación */
+}
+
+nav ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    display: flex; /* Usar flexbox para alinear los elementos de la lista */
+    justify-content: center; /* Centrar los elementos de la lista */
+}
+
+nav li {
+    margin: 0 15px; /* Espacio entre los elementos de la lista */
+}
+
+nav a {
+    color: #1e88e5; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1.2em; /* Tamaño de fuente para los enlaces */
+    transition: color 0.3s; /* Transición suave para el color */
+}
+
+nav a:hover {
+    color: #1565c0; /* Color al pasar el mouse */
+}
+
+main {
+    text-align: center; /* Centrar el texto en el contenido principal */
+    margin: 20px 0; /* Espacio superior e inferior */
+}
+
+footer {
+    margin-top: 20px; /* Espacio superior para el pie de página */
+    padding: 10px 0; /* Espacio interno */
+    background-color: #1a1a1a; /* Color de fondo del pie de página */
+    text-align: center; /* Centrar el texto en el pie de página */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Sombra para el pie de página */
+}
+
+footer p {
+    margin: 0; /* Sin margen para el texto del pie de página */
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+}
+	/* estilos.css */
+/* estiilos.css */
+
+body {
+    font-family: 'Roboto', sans-serif; /* Tipografía moderna */
+    background-color: #121212; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    margin: 0;
+    padding: 20px; /* Espacio alrededor del contenido */
+}
+
+button {
+    background-color: #1e88e5; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    margin-bottom: 20px; /* Espacio inferior */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+button:hover {
+    background-color: #1565c0; /* Color de fondo al pasar el mouse */
+}
+
+header {
+    text-align: center; /* Centrar el texto en el encabezado */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+h1 {
+    font-size: 2.5em; /* Tamaño del encabezado */
+    margin: 0; /* Sin margen */
+}
+
+h2 {
+    text-align: center; /* Centrar el texto del subtítulo */
+    margin: 20px 0; /* Espacio superior e inferior */
+}
+
+nav {
+    text-align: center; /* Centrar la navegación */
+    margin: 20px 0; /* Espacio superior e inferior */
+}
+
+nav ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+}
+
+nav li {
+    display: inline; /* Mostrar elementos en línea */
+    margin: 0 15px; /* Espacio entre los elementos de la lista */
+}
+
+nav a {
+    color: #1e88e5; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1.2em; /* Tamaño de fuente para los enlaces */
+    transition: color 0.3s; /* Transición suave para el color */
+}
+
+nav a:hover {
+    color: #1565c0; /* Color al pasar el mouse */
+}
+
+.product-images {
+    display: flex; /* Usar flexbox para alinear las imágenes */
+    justify-content: center; /* Centrar las imágenes */
+    margin: 20px 0; /* Espacio superior e inferior */
+}
+
+.product-image {
+    width: 100px; /* Ancho de las imágenes */
+    height: 100px; /* Alto de las imágenes */
+    border-radius: 10px; /* Bordes redondeados */
+    object-fit: cover; /* Mantener la proporción de la imagen */
+    margin: 0 10px; /* Espacio entre las imágenes */
+    transition: transform 0.3s, filter 0.3s, border 0.3s; /* Transición suave */
+}
+
+/* Efecto hover para las imágenes */
+.product-image:hover {
+    transform: scale(1.1); /* Aumentar el tamaño de la imagen al pasar el mouse */
+    filter: brightness(1.2); /* Aumentar el brillo de la imagen al pasar el mouse */
+    border: 3px dotted #1e88e5; /* Borde punteado azul al pasar el mouse */
+}
+body {
+    font-family: 'Roboto', sans-serif; /* Tipografía moderna */
+    background-color: #121212; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    margin: 0;
+    padding: 20px; /* Espacio alrededor del contenido */
+}
+nav {
+    background-color: #1a1a1a;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para el nav */
+}
+
+button {
+    background-color: #1e88e5; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    margin-bottom: 20px; /* Espacio inferior */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+button:hover {
+    background-color: #1565c0; /* Color de fondo al pasar el mouse */
+}
+
+header {
+    text-align: center; /* Centrar el texto en el encabezado */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+h1 {
+    font-size: 2.5em; /* Tamaño del encabezado */
+    margin: 0; /* Sin margen */
+    color: #1e88e5; /* Color del encabezado */
+}
+
+main {
+    background-color: #1a1a1a; /* Fondo gris oscuro para el contenido principal */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para el contenido */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+h2 {
+    text-align: center; /* Centrar el texto del subtítulo */
+    margin: 20px 0; /* Espacio superior e inferior */
+    color: #ffffff; /* Color del subtítulo */
+}
+
+p {
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+}
+
+ul li {
+    background-color: #333; /* Fondo gris oscuro para los elementos de la lista */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 10px 0; /* Espacio entre los elementos de la lista */
+    padding: 10px; /* Espaciado interno */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+ul li:hover {
+    background-color: #444; /* Color de fondo al pasar el mouse */
+}
+
+footer {
+    text-align: center; /* Centrar el texto en el pie de página */
+    margin-top: 20px; /* Espacio superior para el pie de página */
+    padding: 10px 0; /* Espacio interno */
+    background-color: #1a1a1a; /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Sombra para el pie de página */
+}
+
+footer p {
+    margin: 0; /* Sin margen para el texto del pie de página */
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+}/* estilos.css */
+
+body {
+    font-family: 'Roboto', sans-serif; /* Tipografía moderna */
+    background-color: #121212; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    margin: 0;
+    padding: 20px; /* Espacio alrededor del contenido */
+}
+nav {
+    background-color: #1a1a1a;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para el nav */
+}
+
+button {
+    background-color: #1e88e5; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    margin-bottom: 20px; /* Espacio inferior */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+button:hover {
+    background-color: #1565c0; /* Color de fondo al pasar el mouse */
+}
+
+header {
+    text-align: center; /* Centrar el texto en el encabezado */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+h1 {
+    font-size: 2.5em; /* Tamaño del encabezado */
+    margin: 0; /* Sin margen */
+    color: #1e88e5; /* Color del encabezado */
+}
+
+main {
+    background-color: #1a1a1a; /* Fondo gris oscuro para el contenido principal */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para el contenido */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+h2 {
+    text-align: center; /* Centrar el texto del subtítulo */
+    margin: 20px 0; /* Espacio superior e inferior */
+    color: #ffffff; /* Color del subtítulo */
+}
+
+p {
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+form {
+    display: flex; /* Usar flexbox para el formulario */
+    flex-direction: column; /* Colocar los elementos en columna */
+    gap: 15px; /* Espacio entre los elementos del formulario */
+}
+
+label {
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde claro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #333; /* Fondo oscuro para los campos */
+    color: #ffffff; /* Texto blanco */
+}
+
+input[type="submit"] {
+    background-color: #1e88e5; /* Color de fondo del botón de envío */
+    color: white; /* Color del texto del botón de envío */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+input[type="submit"]:hover {
+    background-color: #1565c0; /* Color de fondo al pasar el mouse */
+}
+
+footer {
+    text-align: center; /* Centrar el texto en el pie de página */
+    margin-top: 20px; /* Espacio superior para el pie de página */
+    padding: 10px 0; /* Espacio interno */
+    background-color: #1a1a1a; /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Sombra para el pie de página */
+	margin-right: 20px
+}
+
+footer p {
+    margin: 0; /* Sin margen para el texto del pie de página */
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+}

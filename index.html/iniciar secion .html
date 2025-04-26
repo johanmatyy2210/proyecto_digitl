@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+   <link rel="stylesheet" href="file:///C:/proyecto_digital/css/secion.css"
+</head>
+<body>
+
+    <div class="container">
+        <h2>Iniciar Sesión</h2>
+        <form action="login_process.php" method="POST">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <div class="footer">
+            <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+            <p><a href="file:///C:/proyecto_digital/index.html/inicio.html">Crear una cuenta</a></p>
+        </div>
+    </div>
+ <button onclick="goBack()">Retroceder</button>
+ 		    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
