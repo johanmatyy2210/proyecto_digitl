@@ -1,4 +1,4 @@
-/* secion.css */
+/* estilos.css para la página de inicio de sesión */
 
 body {
     font-family: 'Roboto', sans-serif; /* Tipografía moderna */
@@ -6,30 +6,34 @@ body {
     color: #ffffff; /* Texto blanco */
     margin: 0;
     padding: 20px; /* Espacio alrededor del contenido */
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
 }
 
 .container {
-    max-width: 400px; /* Ancho máximo del contenedor */
-    margin: 50px auto; /* Centrar el contenedor */
     background-color: #1a1a1a; /* Fondo gris oscuro para el contenedor */
     border-radius: 10px; /* Bordes redondeados */
-    padding: 20px; /* Espaciado interno */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para el contenedor */
+    padding: 40px; /* Espaciado interno */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para el contenedor */
+    width: 300px; /* Ancho del contenedor */
+    text-align: center; /* Centrar el texto */
 }
 
-h2 {
-    text-align: center; /* Centrar el título */
+h1 {
+    font-size: 2em; /* Tamaño del encabezado */
     margin-bottom: 20px; /* Espacio inferior */
-    color: #1e88e5; /* Color del título */
-    text-shadow: 0 0 10px rgba(30, 136, 229, 1); /* Efecto de neón */
+    color: #1e88e5; /* Color del encabezado */
 }
 
 label {
-    margin-bottom: 5px; /* Espacio inferior para las etiquetas */
     display: block; /* Mostrar etiquetas como bloques */
+    margin-bottom: 5px; /* Espacio inferior */
+    font-weight: bold; /* Negrita para las etiquetas */
 }
 
-input[type="text"],
+input[type="email"],
 input[type="password"] {
     width: 100%; /* Ancho completo */
     padding: 10px; /* Espaciado interno */
@@ -37,56 +41,35 @@ input[type="password"] {
     border-radius: 5px; /* Bordes redondeados */
     background-color: #333; /* Fondo oscuro para los campos */
     color: #ffffff; /* Texto blanco */
-    margin-bottom: 15px; /* Espacio inferior */
-    transition: border-color 0.3s; /* Transición suave para el borde */
+    margin-bottom: 20px; /* Espacio inferior */
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus {
-    border-color: #1e88e5; /* Color del borde al enfocar */
-}
-
-button {
-    width: 100%; /* Ancho completo */
-    background-color: #1e88e5; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
+input[type="submit"] {
+    background-color: #1e88e5; /* Color de fondo del botón de envío */
+    color: white; /* Color del texto del botón de envío */
     border: none; /* Sin borde */
     border-radius: 5px; /* Bordes redondeados */
     padding: 10px; /* Espaciado interno */
     cursor: pointer; /* Cambia el cursor al pasar el mouse */
     transition: background-color 0.3s; /* Transición suave */
+    width: 100%; /* Ancho completo */
 }
 
-button:hover {
+input[type="submit"]:hover {
     background-color: #1565c0; /* Color de fondo al pasar el mouse */
 }
 
 .footer {
-    text-align: center; /* Centrar el texto en el pie de página */
-    margin-top: 20px; /* Espacio superior */
+    margin-top: 20px; /* Espacio superior para el pie de página */
+    color: #ccc; /* Color del texto del pie de página */
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
 }
 
 .footer a {
     color: #1e88e5; /* Color de los enlaces */
     text-decoration: none; /* Sin subrayado */
-    transition: color 0.3s; /* Transición suave */
 }
 
 .footer a:hover {
-    color: #1565c0; /* Color al pasar el mouse */
-}
-
-button.back {
-    background-color: #1e88e5; /* Color de fondo del botón de retroceder */
-    color: white; /* Color del texto del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 10px 20px; /* Espaciado interno */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
-    margin-top: 20px; /* Espacio superior */
-    transition: background-color 0.3s; /* Transición suave */
-}
-
-button.back:hover {
-    background-color: #1565c0; /* Color de fondo al pasar el mouse */
+    text-decoration: underline; /* Subrayar al pasar el mouse */
 }
