@@ -3,41 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuro Digital</title>
+    <title>Futuro Digital - Tu Tienda de Tecnología</title>
     <link rel="stylesheet" href="file:///C:/xampp/htdocs/proyecto_digital/css/estiilos.css">
 </head>
 <body>
-
     <header>
-        <h1>Bienvenido a Futuro Digital</h1>
-        <div class="header-info">
-            <div class="cart"><a href="file:///C:/xampp/htdocs/proyecto_digital/cart.html">Carrito 🛒</a></div>
-            <div class="my-purchases"><a href="file:///C:/xampp/htdocs/proyecto_digital/mis_compras.html">Mis Compras 📦</a></div>
-            <div class="my-account"><a href="file:///C:/xampp/htdocs/proyecto_digital/mi_cuenta.html">Mi Cuenta 👤</a></div>
-            <div class="phone-number">3233263781</div>
+        <div class="header-content">
+            <h1>Futuro Digital</h1>
+            <div class="header-info">
+                <div class="search-bar">
+                    <input type="search" placeholder="Buscar productos...">
+                    <button type="submit">🔍</button>
+                </div>
+                <div class="header-actions">
+                    <a href="file:///C:/xampp/htdocs/proyecto_digital/cart.html" class="header-button">
+                        <span class="icon">🛒</span>
+                        <span class="text">Carrito</span>
+                    </a>
+                    <a href="file:///C:/xampp/htdocs/proyecto_digital/mis_compras.html" class="header-button">
+                        <span class="icon">📦</span>
+                        <span class="text">Mis Compras</span>
+                    </a>
+                    <a href="file:///C:/xampp/htdocs/proyecto_digital/mi_cuenta.html" class="header-button">
+                        <span class="icon">👤</span>
+                        <span class="text">Mi Cuenta</span>
+                    </a>
+                </div>
+                <div class="contact-info">
+                    <span class="icon">📞</span>
+                    <span class="phone">3233263781</span>
+                </div>
+            </div>
         </div>
     </header>
 
     <nav>
         <ul>
             <li><a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/inicio.html">Inicio</a></li>
+            <li><a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/celulares.html">Celulares</a></li>
+            <li><a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/tablets.html">Tablets</a></li>
+            <li><a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/computadores.html">Computadores</a></li>
             <li><a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/acerca de.html">Acerca de</a></li>
-            <li><a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/servicios.html">Servicios</a></li>
             <li><a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/contactos.html">Contacto</a></li>
         </ul>
     </nav>
 
     <main>
-        <h2>Contenido Principal</h2>
-        <p>
-            En Futuro Digital, creemos que la tecnología debe ser accesible y fácil de usar para todos. Nuestra tienda en línea está diseñada para ofrecerte una experiencia de compra excepcional, donde podrás encontrar una amplia variedad de productos digitales que se adaptan a tus necesidades.
-        </p>
-        <address>
-            Contacto: <a href="mailto:johanmatiasmg2210@gmail.com">johanmatiasmg2210@gmail.com</a>
-        </address>
+        <section class="hero">
+            <h2>Bienvenido a Futuro Digital</h2>
+            <p>Tu destino para la mejor tecnología al mejor precio</p>
+        </section>
 
+        <section class="featured-categories">
+            <h3>Categorías Destacadas</h3>
+            <div class="category-grid">
+                <a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/celulares.html" class="category-card">
+                    <img src="file:///C:/xampp/htdocs/proyecto_digital/images/celular.png" alt="Celulares">
+                    <h4>Celulares</h4>
+                </a>
+                <a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/tablets.html" class="category-card">
+                    <img src="file:///C:/xampp/htdocs/proyecto_digital/images/tablets.png" alt="Tablets">
+                    <h4>Tablets</h4>
+                </a>
+                <a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/computadores.html" class="category-card">
+                    <img src="file:///C:/xampp/htdocs/proyecto_digital/images/pc.png" alt="Computadores">
+                    <h4>Computadores</h4>
+                </a>
+            </div>
+        </section>
+
+        <section class="about-us">
+            <h3>¿Por qué elegirnos?</h3>
+            <div class="features">
+                <div class="feature">
+                    <span class="icon">🚚</span>
+                    <h4>Envío Gratis</h4>
+                    <p>En compras superiores a $500.000</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">🔒</span>
+                    <h4>Compra Segura</h4>
+                    <p>Pagos seguros y garantizados</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">💬</span>
+                    <h4>Soporte 24/7</h4>
+                    <p>Atención al cliente permanente</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Futuro Digital. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>📧 Email: <a href="mailto:johanmatiasmg2210@gmail.com">johanmatiasmg2210@gmail.com</a></p>
+                <p>📞 Teléfono: 3233263781</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/acerca de.html">Sobre Nosotros</a></li>
+                    <li><a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/servicios.html">Servicios</a></li>
+                    <li><a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/contactos.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Futuro Digital. Todos los derechos reservados.</p>
+        </div>
     </footer>
+</body>
+</html>
