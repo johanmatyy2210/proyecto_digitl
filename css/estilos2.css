@@ -1,85 +1,196 @@
-/* estilos2.css */
-
+/* Modern Product Page Styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Tipografía moderna */
-    background-color: #121212; /* Fondo oscuro */
-    color: #ffffff; /* Texto blanco */
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%);
+    color: #ffffff;
     margin: 0;
-    padding: 20px; /* Espacio alrededor del contenido */
+    padding: 20px;
+    min-height: 100vh;
 }
 
 h1 {
-    text-align: center; /* Centrar el título */
-    font-size: 2.5em; /* Tamaño del encabezado */
-    margin-bottom: 20px; /* Espacio inferior */
-    text-shadow: 0 0 10px rgba(30, 136, 229, 1); /* Efecto de neón */
+    text-align: center;
+    font-size: 2.5em;
+    margin: 1.5rem 0;
+    color: #1e88e5;
+    text-shadow: 0 0 15px rgba(30, 136, 229, 0.5);
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #1e88e5, transparent);
+    margin: 10px auto;
 }
 
 .container {
-    display: flex; /* Usar flexbox para alinear los productos */
-    justify-content: center; /* Centrar los productos */
-    flex-wrap: wrap; /* Permitir que los productos se envuelvan */
-    gap: 20px; /* Espacio entre los productos */
+    max-width: 1400px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
 }
 
 .product {
-    background-color: #1a1a1a; /* Fondo gris oscuro para los productos */
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 20px; /* Espaciado interno */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para los productos */
-    width: 300px; /* Ancho fijo para los productos */
-    transition: transform 0.3s; /* Transición suave para el efecto de hover */
+    background: rgba(26, 26, 26, 0.95);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .product:hover {
-    transform: scale(1.05); /* Aumentar el tamaño al pasar el mouse */
-    box-shadow: 0 0 20px rgba(30, 136, 229, 1); /* Brillo al pasar el mouse */
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(30, 136, 229, 0.2);
+}
+
+.product::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #1e88e5, #1565c0);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product:hover::before {
+    opacity: 1;
 }
 
 .product img {
-    width: 100%; /* Ancho completo de la imagen */
-    border-radius: 10px; /* Bordes redondeados para la imagen */
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.product:hover img {
+    transform: scale(1.05);
 }
 
 h2 {
-    text-align: center; /* Centrar el texto del nombre del producto */
-    margin: 10px 0; /* Espacio superior e inferior */
-    color: #1e88e5; /* Color del nombre del producto */
-    text-shadow: 0 0 5px rgba(30, 136, 229, 0.7); /* Efecto de brillo */
+    font-size: 1.5em;
+    margin: 1rem 0;
+    color: #1e88e5;
+    text-align: center;
 }
 
-p {
-    line-height: 1.6; /* Espaciado entre líneas */
+.product p {
+    line-height: 1.6;
+    margin: 0.5rem 0;
+    color: #cccccc;
+    flex-grow: 1;
+}
+
+.product p:last-of-type {
+    color: #1e88e5;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 1rem 0;
 }
 
 .button {
-    display: inline-block; /* Mostrar como bloque en línea */
-    background-color: #1e88e5; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    padding: 10px 15px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    text-decoration: none; /* Sin subrayado */
-    text-align: center; /* Centrar el texto */
-    transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave */
-    margin-top: 10px; /* Espacio superior */
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0;
+    background: linear-gradient(45deg, #1e88e5, #1565c0);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.button:hover::before {
+    left: 100%;
 }
 
 .button:hover {
-    background-color: #1565c0; /* Color de fondo al pasar el mouse */
-    box-shadow: 0 0 10px rgba(30, 136, 229, 1); /* Brillo al pasar el mouse */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(30, 136, 229, 0.3);
 }
 
 button {
-    background-color: #1e88e5; /* Color de fondo del botón de retroceder */
-    color: white; /* Color del texto del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 10px 20px; /* Espaciado interno */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
-    margin-top: 20px; /* Espacio superior */
-    transition: background-color 0.3s; /* Transición suave */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: rgba(30, 136, 229, 0.2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin: 1rem 0;
 }
 
 button:hover {
-    background-color: #1565c0; /* Color de fondo al pasar el mouse */
+    background: rgba(30, 136, 229, 0.3);
+    transform: translateX(-5px);
+}
+
+button::before {
+    content: '←';
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .product {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .product img {
+        height: 180px;
+    }
 }
