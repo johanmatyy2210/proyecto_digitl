@@ -3,29 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesión</title>
-   <link rel="stylesheet" href="file:///C:/xampp/htdocs/proyecto_digital/css/secion.css">
+    <title>Inicio de Sesión - Futuro Digital</title>
+    <link rel="stylesheet" href="file:///C:/xampp/htdocs/proyecto_digital/css/secion.css">
 </head>
 <body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <h1>Iniciar Sesión</h1>
+                <p>Bienvenido a Futuro Digital</p>
+            </div>
+            
+            <form action="login_process.php" method="POST" class="login-form">
+                <div class="form-group">
+                    <label for="username">
+                        <span class="icon">👤</span>
+                        Usuario
+                    </label>
+                    <input type="text" id="username" name="username" required>
+                </div>
 
-    <div class="container">
-        <h2>Iniciar Sesión</h2>
-        <form action="login_process.php" method="POST">
-            <label for="username">Usuario:</label>
-            <input type="text" id="username" name="username" required>
+                <div class="form-group">
+                    <label for="password">
+                        <span class="icon">🔒</span>
+                        Contraseña
+                    </label>
+                    <input type="password" id="password" name="password" required>
+                </div>
 
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Recordarme</label>
+                </div>
 
-            <button type="submit">Iniciar Sesión</button>
-        </form>
-        <div class="footer">
-            <p><a href="#">¿Olvidaste tu contraseña?</a></p>
-            <p><a href="file:///C:/xampp/htdocs/proyecto_digital/crear%20cuenta.html">Crear una cuenta</a></p>
+                <button type="submit" class="login-button">Iniciar Sesión</button>
+            </form>
+
+            <div class="login-footer">
+                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                <a href="file:///C:/xampp/htdocs/proyecto_digital/crear%20cuenta.html" class="create-account">Crear una cuenta</a>
+            </div>
         </div>
+
+        <button onclick="goBack()" class="back-button">
+            <span class="icon">←</span> Retroceder
+        </button>
     </div>
- <button onclick="goBack()">Retroceder</button>
- 		    <script>
+
+    <script>
         function goBack() {
             window.history.back();
         }
