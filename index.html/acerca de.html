@@ -4,34 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de - Futuro Digital</title>
-    <link rel="stylesheet" href="file:///C:/xampp/htdocs/proyecto_digital/css/estiilos.css"> <!-- Corregido el nombre del archivo -->
+    <link rel="stylesheet" href="file:///C:/xampp/htdocs/proyecto_digital/css/estilos2.css">
 </head>
 <body>
+    <div class="hero-section">
+        <button onclick="goBack()" class="back-button">
+            <span class="icon">←</span> Retroceder
+        </button>
+        <h1>Acerca de Futuro Digital</h1>
+        <p class="hero-subtitle">Innovación y tecnología a tu alcance</p>
+    </div>
 
-    <button onclick="goBack()">Retroceder</button>
+    <main class="main-content">
+        <section class="about-section">
+            <div class="about-grid">
+                <div class="about-card">
+                    <h2>Nuestra Historia</h2>
+                    <p>En Futuro Digital, somos un equipo apasionado de profesionales dedicados a ofrecer soluciones tecnológicas innovadoras. Desde nuestros inicios, nos hemos comprometido a proporcionar productos de alta calidad y un servicio excepcional a nuestros clientes.</p>
+                </div>
 
-    <header>
-        <h1>ACERCA DE FUTURO DIGITAL</h1>
-    </header>
+                <div class="about-card">
+                    <h2>Nuestra Misión</h2>
+                    <p>Empoderar a nuestros clientes a través de la tecnología, proporcionando soluciones digitales que mejoren su vida diaria y contribuyan a su éxito personal y profesional.</p>
+                </div>
 
-    <main>
-        <h2>Contenido Principal</h2>
-        <p>
-            En Futuro Digital, somos un equipo apasionado de profesionales dedicados a ofrecer soluciones digitales que se adaptan a tus necesidades. Nuestra misión es empoderar a nuestros clientes a través de la tecnología, ayudándoles a alcanzar sus objetivos de manera eficiente y efectiva.
-        </p>
-        <p>
-            <strong>¿Por qué comprar con nosotros?</strong>
-        </p>
-        <ul>
-            <li><strong>Variedad de Productos:</strong> Desde software innovador hasta cursos en línea, tenemos todo lo que necesitas para potenciar tu vida digital.</li>
-            <li><strong>Soporte Personalizado:</strong> Nuestro equipo está siempre disponible para ayudarte con cualquier duda o consulta.</li>
-            <li><strong>Precios Competitivos:</strong> Ofrecemos productos de alta calidad a precios accesibles.</li>
-        </ul>
+                <div class="about-card">
+                    <h2>Nuestra Visión</h2>
+                    <p>Ser líderes en el mercado tecnológico, reconocidos por nuestra innovación, calidad de servicio y compromiso con la satisfacción del cliente.</p>
+                </div>
+            </div>
+
+            <section class="values-section">
+                <h2 class="section-title">Nuestros Valores</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <span class="value-icon">⭐</span>
+                        <h3>Excelencia</h3>
+                        <p>Nos esforzamos por superar las expectativas en todo lo que hacemos.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-icon">🤝</span>
+                        <h3>Integridad</h3>
+                        <p>Actuamos con honestidad y transparencia en todas nuestras operaciones.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-icon">💡</span>
+                        <h3>Innovación</h3>
+                        <p>Buscamos constantemente nuevas formas de mejorar y crecer.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-icon">👥</span>
+                        <h3>Compromiso</h3>
+                        <p>Dedicados a la satisfacción total de nuestros clientes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="benefits-section">
+                <h2 class="section-title">¿Por qué elegirnos?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Variedad de Productos</h3>
+                        <p>Amplia selección de dispositivos y accesorios de las mejores marcas.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Soporte Personalizado</h3>
+                        <p>Equipo de expertos disponible para resolver todas tus dudas.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Precios Competitivos</h3>
+                        <p>Ofertas y promociones especiales en productos seleccionados.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
     </main>
-
-    <footer>
-        <p>&copy; 2025 Futuro Digital. Todos los derechos reservados.</p>
-    </footer>
 
     <script>
         function goBack() {

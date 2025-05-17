@@ -141,31 +141,6 @@ h2 {
     box-shadow: 0 5px 15px rgba(30, 136, 229, 0.3);
 }
 
-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 24px;
-    background: rgba(30, 136, 229, 0.2);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    margin: 1rem 0;
-}
-
-button:hover {
-    background: rgba(30, 136, 229, 0.3);
-    transform: translateX(-5px);
-}
-
-button::before {
-    content: '←';
-    font-size: 1.2em;
-}
-
 .hero-section {
     text-align: center;
     padding: 4rem 2rem;
@@ -203,56 +178,43 @@ button::before {
     margin-bottom: 2rem;
 }
 
-.categories-grid {
+.about-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-bottom: 4rem;
 }
 
-.category-card {
+.about-card {
     background: rgba(26, 26, 26, 0.95);
     border-radius: 15px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-decoration: none;
-    color: white;
+    padding: 2rem;
+    transition: transform 0.3s ease;
 }
 
-.category-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(30, 136, 229, 0.2);
+.about-card:hover {
+    transform: translateY(-5px);
 }
 
-.category-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid #1e88e5;
-}
-
-.category-content {
-    padding: 1.5rem;
-}
-
-.category-content h3 {
+.about-card h2 {
     color: #1e88e5;
-    margin: 0 0 0.5rem 0;
-    font-size: 1.5em;
+    margin-bottom: 1rem;
+    text-align: left;
 }
 
-.category-content p {
+.about-card p {
     margin: 0;
-    opacity: 0.8;
+    line-height: 1.6;
 }
 
-.features-grid {
+.values-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
+    margin-bottom: 4rem;
 }
 
-.feature-card {
+.value-card {
     background: rgba(26, 26, 26, 0.95);
     border-radius: 15px;
     padding: 2rem;
@@ -260,22 +222,49 @@ button::before {
     transition: transform 0.3s ease;
 }
 
-.feature-card:hover {
+.value-card:hover {
     transform: translateY(-5px);
 }
 
-.feature-icon {
+.value-icon {
     font-size: 2.5em;
     margin-bottom: 1rem;
     display: block;
 }
 
-.feature-card h3 {
+.value-card h3 {
     color: #1e88e5;
     margin: 0 0 1rem 0;
 }
 
-.feature-card p {
+.value-card p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.benefit-card {
+    background: rgba(26, 26, 26, 0.95);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card h3 {
+    color: #1e88e5;
+    margin: 0 0 1rem 0;
+}
+
+.benefit-card p {
     margin: 0;
     opacity: 0.8;
 }
@@ -324,12 +313,10 @@ button::before {
         font-size: 2em;
     }
 
-    .categories-grid {
+    .about-grid,
+    .values-grid,
+    .benefits-grid {
         grid-template-columns: 1fr;
-    }
-
-    .features-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
 
