@@ -4,31 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Futuro Digital</title>
-    <link rel="stylesheet" href="file:///C:/xampp/htdocs/proyecto_digital/css/estilos2.css"> <!-- Corregido el nombre del archivo -->
+    <link rel="stylesheet" href="file:///C:/xampp/htdocs/proyecto_digital/css/estilos2.css">
 </head>
 <body>
-
-    <button onclick="goBack()">Retroceder</button>
-
-    <header>
-        <h1>Home</h1>
-    </header>
-
-    <h2>¿Qué quieres comprar?</h2>
-
-    <nav>
-        <ul>
-            <li><a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/celulares.html">CELULARES</a></li>
-            <li><a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/tablets.html">TABLETS</a></li>
-            <li><a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/computadores.html">COMPUTADORES</a></li>
-        </ul>
-    </nav>
-
-    <div class="product-images">
-        <img src="file:///C:/xampp/htdocs/proyecto_digital/images/celular.png" alt="Celular" class="product-image"> 
-        <img src="file:///C:/xampp/htdocs/proyecto_digital/images/tablets.png" alt="Tablets" class="product-image"> 
-        <img src="file:///C:/xampp/htdocs/proyecto_digital/images/pc.png" alt="Computador" class="product-image"> 
+    <div class="hero-section">
+        <button onclick="goBack()" class="back-button">
+            <span class="icon">←</span> Retroceder
+        </button>
+        <h1>Bienvenido a Futuro Digital</h1>
+        <p class="hero-subtitle">Tu destino tecnológico de confianza</p>
     </div>
+
+    <main class="main-content">
+        <section class="categories-section">
+            <h2 class="section-title">Explora Nuestras Categorías</h2>
+            <div class="categories-grid">
+                <a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/celulares.html" class="category-card">
+                    <img src="file:///C:/xampp/htdocs/proyecto_digital/images/celular.png" alt="Celulares" class="category-image">
+                    <div class="category-content">
+                        <h3>Celulares</h3>
+                        <p>Descubre los últimos smartphones</p>
+                    </div>
+                </a>
+                <a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/tablets.html" class="category-card">
+                    <img src="file:///C:/xampp/htdocs/proyecto_digital/images/tablets.png" alt="Tablets" class="category-image">
+                    <div class="category-content">
+                        <h3>Tablets</h3>
+                        <p>Portabilidad y rendimiento</p>
+                    </div>
+                </a>
+                <a href="file:///C:/xampp/htdocs/proyecto_digital/index.html/computadores.html" class="category-card">
+                    <img src="file:///C:/xampp/htdocs/proyecto_digital/images/pc.png" alt="Computadores" class="category-image">
+                    <div class="category-content">
+                        <h3>Computadores</h3>
+                        <p>Potencia para tu día a día</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <h2 class="section-title">¿Por qué elegirnos?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🚚</span>
+                    <h3>Envío Gratis</h3>
+                    <p>En compras superiores a $500.000</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Garantía Extendida</h3>
+                    <p>Protección adicional para tu compra</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">💳</span>
+                    <h3>Pago Seguro</h3>
+                    <p>Múltiples métodos de pago</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎁</span>
+                    <h3>Ofertas Exclusivas</h3>
+                    <p>Descuentos especiales para ti</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script>
         function goBack() {
