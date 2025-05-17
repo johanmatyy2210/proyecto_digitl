@@ -4,33 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - Futuro Digital</title>
-    <link rel="stylesheet" href="file:///C:/xampp/htdocs/proyecto_digital/css/estiilos.css"> <!-- Corregido el nombre del archivo -->
+    <link rel="stylesheet" href="file:///C:/xampp/htdocs/proyecto_digital/css/estilos2.css">
 </head>
 <body>
+    <div class="hero-section">
+        <button onclick="goBack()" class="back-button">
+            <span class="icon">←</span> Retroceder
+        </button>
+        <h1>Nuestros Servicios</h1>
+        <p class="hero-subtitle">Soluciones tecnológicas para todas tus necesidades</p>
+    </div>
 
-    <button onclick="goBack()">Retroceder</button>
+    <main class="main-content">
+        <section class="services-section">
+            <div class="about-grid">
+                <div class="about-card">
+                    <h2>Desarrollo de Software</h2>
+                    <p>Creamos soluciones personalizadas que se adaptan perfectamente a tus necesidades específicas. Nuestro equipo de desarrolladores expertos trabaja con las últimas tecnologías para garantizar productos de alta calidad.</p>
+                </div>
 
-    <header>
-        <h1>NUESTROS SERVICIOS</h1>
-    </header>
+                <div class="about-card">
+                    <h2>Consultoría Digital</h2>
+                    <p>Te ayudamos a optimizar tu presencia digital y mejorar tus procesos tecnológicos. Nuestros consultores expertos te guiarán en la transformación digital de tu negocio.</p>
+                </div>
 
-    <main>
-        <h2>¿Qué ofrecemos?</h2>
-        <p>
-            En Futuro Digital, ofrecemos una variedad de servicios diseñados para ayudarte a alcanzar tus objetivos digitales. Nuestro equipo de expertos está aquí para proporcionarte soluciones personalizadas y efectivas.
-        </p>
-        <ul>
-            <li><strong>Desarrollo de Software:</strong> Creamos aplicaciones personalizadas que se adaptan a tus necesidades específicas.</li>
-            <li><strong>Consultoría Digital:</strong> Asesoramos a empresas sobre cómo mejorar su presencia en línea y optimizar sus procesos digitales.</li>
-            <li><strong>Capacitación y Cursos:</strong> Ofrecemos cursos en línea sobre diversas herramientas y tecnologías para potenciar tus habilidades.</li>
-            <li><strong>Soporte Técnico:</strong> Nuestro equipo está disponible para resolver cualquier problema técnico que puedas tener.</li>
-            <li><strong>Marketing Digital:</strong> Ayudamos a las empresas a aumentar su visibilidad y atraer más clientes a través de estrategias de marketing efectivas.</li>
-        </ul>
+                <div class="about-card">
+                    <h2>Soporte Técnico</h2>
+                    <p>Ofrecemos asistencia técnica profesional para resolver cualquier problema con tus dispositivos. Nuestro equipo está disponible para ayudarte cuando lo necesites.</p>
+                </div>
+            </div>
+
+            <section class="values-section">
+                <h2 class="section-title">Nuestras Especialidades</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <span class="value-icon">💻</span>
+                        <h3>Desarrollo Web</h3>
+                        <p>Sitios web modernos y responsivos que destacan tu marca.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-icon">📱</span>
+                        <h3>Apps Móviles</h3>
+                        <p>Aplicaciones nativas y multiplataforma de alto rendimiento.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-icon">🔒</span>
+                        <h3>Ciberseguridad</h3>
+                        <p>Protección avanzada para tus sistemas y datos.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-icon">📊</span>
+                        <h3>Análisis de Datos</h3>
+                        <p>Insights valiosos para la toma de decisiones.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="benefits-section">
+                <h2 class="section-title">Beneficios de Nuestros Servicios</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Atención Personalizada</h3>
+                        <p>Cada proyecto recibe atención dedicada y soluciones adaptadas a sus necesidades específicas.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Tecnología de Punta</h3>
+                        <p>Utilizamos las últimas herramientas y tecnologías para garantizar resultados óptimos.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Soporte Continuo</h3>
+                        <p>Acompañamiento y asistencia durante todo el ciclo de vida del proyecto.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
     </main>
-
-    <footer>
-        <p>© 2025 Futuro Digital. Todos los derechos reservados.</p>
-    </footer>
 
     <script>
         function goBack() {
